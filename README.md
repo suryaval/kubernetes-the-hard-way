@@ -60,3 +60,11 @@ kubernetes-the-hard-way  35.197.57.XYZ                          us-west1        
 ```
 
 ### Provision Compute Instances
+
+#### Create Controller Nodes
+
+[Create Controller Instances](./scripts/create-controller-instances.sh)
+
+#### Create Worker Nodes
+
+[Create Worker Instances](./scripts/create-worker-instances.sh)
