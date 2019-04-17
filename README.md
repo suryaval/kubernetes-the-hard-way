@@ -74,3 +74,15 @@ kubernetes-the-hard-way  35.197.57.XYZ                          us-west1        
 ```
 gcloud compute ssh controller-0
 ```
+
+### Generate CA Certs, pem files for controller and worker authentication
+
+```
+ckad cfssl gencert -initca ca-csr.json | cfssljson -bare ca
+2019/04/17 13:36:03 [INFO] generating a new CA key and certificate from CSR
+2019/04/17 13:36:03 [INFO] generate received request
+2019/04/17 13:36:03 [INFO] received CSR
+2019/04/17 13:36:03 [INFO] generating key: rsa-2048
+2019/04/17 13:36:03 [INFO] encoded CSR
+2019/04/17 13:36:03 [INFO] signed certificate with serial number 599143458491026974430108018655231742018604467079
+```
